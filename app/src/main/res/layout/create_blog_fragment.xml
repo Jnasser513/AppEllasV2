@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.user.BlogViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/blogs_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/fifth_color">
+
+                <ImageButton
+                    android:id="@+id/create_blog_action_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_return"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/ic_circle_headers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/blogs_header_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Conoce las historias de otras personas"
+                    android:textColor="@color/third_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Crear Blog"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="32sp"
+                    app:layout_constraintBottom_toTopOf="@id/blogs_header_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_gap"
+                android:background="@drawable/create_blog_container_style"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_title_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dialog_edit_text_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:hint="Título"
+                        android:inputType="textMultiLine"
+                        android:maxLength="50"
+                        android:padding="12dp"
+                        android:text="@{viewmodel.title}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_subtitle_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_subtitle_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/dialog_edit_text_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:hint="Subtítulo"
+                        android:inputType="textMultiLine"
+                        android:maxLength="50"
+                        android:text="@{viewmodel.subtitle}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_description_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@drawable/dialog_edit_text_style"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:gravity="top"
+                        android:hint="Escribe tu historia aquí..."
+                        android:maxLength="200"
+                        android:inputType="textMultiLine"
+                        android:maxEms="10"
+                        android:padding="12dp"
+                        android:text="@{viewmodel.description}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/create_blog_image"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/create_blog_image_style" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/create_blog_action_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/button_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Publicar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/create_blog_progressBar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:elevation="@dimen/default_gap"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:trackColor="@android:color/transparent"
+                        app:trackThickness="4dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

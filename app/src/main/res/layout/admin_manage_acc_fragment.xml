@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.admin.AdminUserViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/blogs_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/fifth_color">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="-20dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@drawable/ic_circle_headers" />
+
+            <ImageButton
+                android:id="@+id/admin_manage_account_return"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginTop="@dimen/default_gap"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_return"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="Administrar cuentas"
+                android:textColor="@color/secondary_color"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/default_gap"
+            android:layout_marginVertical="@dimen/medium_gap"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/admin_manage_acc_recyclerview"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/minimum_gap"
+                tools:listitem="@layout/item_account"/>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/admin_manage_acc_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="@dimen/default_gap"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>

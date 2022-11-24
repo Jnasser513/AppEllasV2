@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.user.AuthViewModel" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_gap">
+
+            <ImageButton
+                android:id="@+id/create_account_action_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_return" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Crear cuenta"
+                android:textColor="@color/text_color"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Porfavor llena todos los campos"
+                android:textColor="#787575" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:background="@drawable/edt_style"
+                android:hint=" "
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="@color/third_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_account_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:text="@{viewmodel.nameRegister}"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_gap"
+                android:background="@drawable/edt_style"
+                android:hint=" "
+                app:startIconDrawable="@drawable/ic_phone"
+                app:startIconTint="@color/third_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_account_phone_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/minimum_gap"
+                    android:text="@{viewmodel.phoneRegister}"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_gap"
+                android:background="@drawable/edt_style"
+                android:hint=" "
+                app:startIconDrawable="@drawable/ic_mail"
+                app:startIconTint="@color/third_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_account_email_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/minimum_gap"
+                    android:text="@{viewmodel.emailRegister}"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_gap"
+                android:background="@drawable/edt_style"
+                android:hint=" "
+                app:startIconDrawable="@drawable/ic_password_lock"
+                app:startIconTint="@color/third_color"
+                app:endIconTint="@color/third_color"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_account_password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/minimum_gap"
+                    android:text="@{viewmodel.passwordRegister}"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_gap"
+                android:background="@drawable/edt_style"
+                android:hint=" "
+                app:startIconDrawable="@drawable/ic_password_lock"
+                app:startIconTint="@color/third_color"
+                app:endIconTint="@color/third_color"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_account_repeat_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Repeat Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/minimum_gap"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/create_account_action_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/button_style_transparent"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Registrarse"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/create_account_progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/default_gap"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/secondary_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="4dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Ya tienes una cuenta?"
+                    android:textColor="@color/third_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/login_action_register_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Inicia sesion"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

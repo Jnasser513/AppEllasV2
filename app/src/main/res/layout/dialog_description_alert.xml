@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.user.LocationViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="@color/dialog_background"
+        app:cardCornerRadius="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/dialog_alert_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="¡La alerta ha sido enviada! \n ¡Por favor ayude a otros a conocer su alerta!"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_report_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dialog_description_alert_title_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:maxLines="1"
+                        android:maxLength="25"
+                        android:text="@{viewmodel.titleAlert}"
+                        android:background="@drawable/dialog_edit_text_style"
+                        android:gravity="top"
+                        android:hint="Escribe aquí tu título..."
+                        android:padding="12dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_report_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/minimum_gap"
+                    android:layout_marginEnd="@dimen/default_gap"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_report_description_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@drawable/dialog_edit_text_style"
+                        android:gravity="top"
+                        android:text="@{viewmodel.descriptionAlert}"
+                        android:maxLength="120"
+                        android:hint="Escribe aquí tu descripción..."
+                        android:padding="12dp"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="@dimen/default_gap"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dialog_confirm_register_action_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_dialog"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/minimum_gap"
+                        android:layout_weight="1"
+                        android:textColor="@color/primary_color"
+                        android:textSize="18sp"
+                        android:text="Cancelar"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/dialog_confirm_register_action_ok"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_dialog"
+                        android:layout_gravity="center"
+                        android:textColor="@color/primary_color"
+                        android:textSize="18sp"
+                        android:text="Enviar"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/dialog_description_alert_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="@dimen/default_gap"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/secondary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

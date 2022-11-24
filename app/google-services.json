@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733644180575",
+    "project_id": "app-ellas",
+    "storage_bucket": "app-ellas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733644180575:android:e80d88b20e9b141fd1dfea",
+        "android_client_info": {
+          "package_name": "com.app.appellas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733644180575-e6hs0stqniskn84snvncc9gb2upocbcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5BrMnITqikIImX9JiHr2PDvr7VKPfOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733644180575-e6hs0stqniskn84snvncc9gb2upocbcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

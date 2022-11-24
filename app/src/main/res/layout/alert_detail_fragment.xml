@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.user.BlogViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnReturn"
+                android:layout_width="50dp"
+                android:layout_marginStart="@dimen/default_gap"
+                android:src="@drawable/ic_return"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/ic_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_gap"
+                android:background="@drawable/create_blog_container_style"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/create_blog_title_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:background="@drawable/dialog_edit_text_style"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:padding="12dp"
+                    tools:text="Prueba"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/create_blog_subtitle_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingVertical="@dimen/default_gap"
+                    android:background="@drawable/dialog_edit_text_style"
+                    android:fontFamily="@font/poppinsbold"
+                    android:maxLines="8"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    tools:text="descripcion"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/third_color"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/create_blog_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/create_blog_image_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

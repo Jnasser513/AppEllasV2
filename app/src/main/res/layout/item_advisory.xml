@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="@dimen/minimum_gap"
+        android:layout_gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/item_advisory_name">
+
+                <ImageView
+                    android:id="@+id/item_advisory_photo"
+                    android:layout_width="0dp"
+                    android:src="@drawable/asesor"
+                    android:background="#BF6716"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:background="#D90E15"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.2">
+
+                    <ImageButton
+                        android:id="@+id/item_advisory_action_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/minimum_gap"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_call" />
+
+                    <ImageButton
+                        android:id="@+id/item_advisory_action_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/default_text_size"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_message" />
+
+                    <ImageButton
+                        android:id="@+id/item_advisory_action_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/default_gap"
+                        android:src="@drawable/ic_trash"
+                        android:background="@android:color/transparent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/item_advisor_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminate="true"
+                app:indicatorColor="@color/secondary_color"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="4dp"
+                android:visibility="gone"
+                android:elevation="@dimen/default_gap"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_advisory_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/fifth_color"
+                tools:text="Jose Nasser"
+                android:gravity="center"
+                android:textColor="@color/third_color"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:ems="3"
+                android:fontFamily="@font/poppinsbold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

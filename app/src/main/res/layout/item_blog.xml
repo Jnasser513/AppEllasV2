@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_gap"
+        android:background="@drawable/blog_style">
+
+        <TextView
+            android:id="@+id/item_blog_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:layout_marginEnd="@dimen/default_gap"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="#D90E15"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Titulo" />
+
+        <TextView
+            android:id="@+id/item_blog_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_gap"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="@dimen/default_gap"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="#D90E15"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_blog_title"
+            tools:text="Subtitulo" />
+
+        <TextView
+            android:id="@+id/item_blog_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_gap"
+            android:layout_marginStart="@dimen/default_gap"
+            android:layout_marginEnd="@dimen/minimum_gap"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/third_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_blog_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_blog_subtitle"
+            tools:text="Prueba descripcion" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_blog_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/minimum_gap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_blog_subtitle"
+            app:riv_border_color="@color/secondary_color"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/homepage_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_advisoryFragment"
+            app:destination="@id/advisoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_blogsFragment"
+            app:destination="@id/blogsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advisoryFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.AdvisoryFragment"
+        android:label="AdvisoryFragment"
+        tools:layout="@layout/advisory_fragment"/>
+    <fragment
+        android:id="@+id/blogsFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.BlogsFragment"
+        android:label="BlogsFragment"
+        tools:layout="@layout/blogs_fragment">
+        <action
+            android:id="@+id/action_blogsFragment_to_createBlogFragment"
+            app:destination="@id/createBlogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.InformationFragment"
+        android:label="InformationFragment"
+        tools:layout="@layout/information_fragment"/>
+    <fragment
+        android:id="@+id/createBlogFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.CreateBlogFragment"
+        android:label="CreateBlogFragment"
+        tools:layout="@layout/create_blog_fragment">
+        <action
+            android:id="@+id/action_createBlogFragment_to_dialogCreateBlog"
+            app:destination="@id/dialogCreateBlog" />
+        <action
+            android:id="@+id/action_createBlogFragment_to_blogsFragment"
+            app:destination="@id/blogsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetMenuFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.BottomSheetMenuFragment"
+        android:label="BottomSheetMenuFragment"
+        tools:layout="@layout/bottom_sheet_menu_fragment"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profileFragment_to_dialogDeleteAccount"
+            app:destination="@id/dialogDeleteAccount" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogAlertFragment"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogAlertFragment"
+        android:label="DialogAlertFragment"
+        tools:layout="@layout/dialog_alert">
+        <action
+            android:id="@+id/action_dialogAlertFragment_to_dialogDescriptionAlert"
+            app:destination="@id/dialogDescriptionAlert" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogCreateBlog"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogCreateBlog"
+        android:label="DialogCreateBlog"
+        tools:layout="@layout/dialog_create_blog">
+        <action
+            android:id="@+id/action_dialogCreateBlog_to_blogsFragment"
+            app:destination="@id/blogsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogDeleteAccount"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogDeleteAccount"
+        android:label="DialogDeleteAccount"
+        tools:layout="@layout/dialog_delete_account"/>
+    <dialog
+        android:id="@+id/dialogDescriptionAlert"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogDescriptionAlert"
+        android:label="DialogDescriptionAlert"
+        tools:layout="@layout/dialog_description_alert">
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_dialogDescriptionAlert_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.ContactsFragment"
+        android:label="ContactsFragment"
+        tools:layout="@layout/contacts_fragment">
+        <action
+            android:id="@+id/action_contactsFragment_to_createContactFragment"
+            app:destination="@id/createContactFragment" />
+        <action
+            android:id="@+id/action_contactsFragment_to_dialogDeleteContact"
+            app:destination="@id/dialogDeleteContact" />
+    </fragment>
+    <fragment
+        android:id="@+id/createContactFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.CreateContactFragment"
+        android:label="CreateContactFragment"
+        tools:layout="@layout/create_contact_fragment">
+        <action
+            android:id="@+id/action_createContactFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogDeleteContact"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogDeleteContact"
+        android:label="DialogDeleteContact"
+        tools:layout="@layout/dialog_delete_contact">
+        <action
+            android:id="@+id/action_dialogDeleteContact_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/alertDetailFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.AlertDetailFragment"
+        android:label="AlertDetailFragment"
+        tools:layout="@layout/alert_detail_fragment"/>
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="25dp"
+                android:text="¡Listo!\n Su blog fue publicado exitosamente"
+                android:textSize="17sp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/dialog_confirm_register_action_ok"
+                android:layout_width="250dp"
+                android:layout_height="54dp"
+                android:background="@drawable/button_style_primary_color"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/default_gap"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:textSize="18sp"
+                android:layout_marginBottom="25dp"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/blogs_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/fifth_color">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="-20dp"
+                android:layout_marginBottom="-40dp"
+                android:background="@drawable/ic_circle_headers" />
+
+            <TextView
+                android:id="@+id/blogs_header_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_gap"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="Aprende de las historias de otros"
+                android:textColor="@color/third_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="Blogs"
+                android:textColor="@color/secondary_color"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toTopOf="@id/blogs_header_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blogs_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginEnd="@dimen/medium_gap"
+                tools:listitem="@layout/item_blog" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/blogs_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="@dimen/default_gap"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/secondary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="4dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/blogs_action_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="@dimen/default_gap"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maxImageSize="40dp"
+                app:backgroundTint="@color/secondary_color"
+                android:layout_marginEnd="@dimen/default_gap"
+                android:src="@drawable/ic_add"
+                android:layout_marginTop="@dimen/default_gap" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+</layout>

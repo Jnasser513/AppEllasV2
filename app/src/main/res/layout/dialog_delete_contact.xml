@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/dialog_alert_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Esta seguro que desea eliminar su contacto?"
+                    android:textSize="17sp"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginHorizontal="@dimen/default_gap"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dialog_confirm_register_action_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_primary_color"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/minimum_gap"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="Cancelar"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/dialog_confirm_register_action_ok"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="54dp"
+                        android:background="@drawable/button_style_primary_color"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="Eliminar"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/dialog_delete_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="@dimen/default_gap"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/secondary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
+

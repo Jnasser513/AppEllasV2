@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_enterEmailFragment"
+            app:destination="@id/enterEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.login.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/change_password_fragment">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="code"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.login.CreateAccountFragment"
+        android:label="CreateAccountFragment"
+        tools:layout="@layout/create_account_fragment">
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_createAccountFragment_to_dialogConfirmRegister"
+            app:destination="@id/dialogConfirmRegister" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogConfirmRegister"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogConfirmRegister"
+        android:label="DialogConfirmRegister"
+        tools:layout="@layout/dialog_confirm_register">
+        <action
+            android:id="@+id/action_dialogConfirmRegister_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/enterEmailFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.login.EnterEmailFragment"
+        android:label="EnterEmailFragment"
+        tools:layout="@layout/enter_email_fragment">
+        <action
+            android:id="@+id/action_enterEmailFragment_to_verifyRecoveryCodeFragment"
+            app:destination="@id/verifyRecoveryCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyRecoveryCodeFragment"
+        android:name="com.app.appellas.ui.views.fragments.user.login.VerifyRecoveryCodeFragment"
+        android:label="VerifyRecoveryCodeFragment"
+        tools:layout="@layout/verify_recover_code_fragment">
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_verifyRecoveryCodeFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_verifyRecoveryCodeFragment_to_enterEmailFragment"
+            app:destination="@id/enterEmailFragment" />
+    </fragment>
+</navigation>

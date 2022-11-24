@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCF7F7">
+
+        <View
+            android:id="@+id/bottom_sheet_menu_principal_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="65dp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_home_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_principal_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:text="Inicio"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_sheet_menu_home_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_home_container" />
+
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_blogs_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_home_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:text="Blogs"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_sheet_menu_house_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_blogs_container" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_advisory_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_house_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:text="Asesores"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_sheet_menu_directory_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_advisory_container" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_information_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_directory_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:text="Información"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_sheet_menu_contact_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_information_container" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_contact_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_contact_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/text_color"
+                android:text="Contactos"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_sheet_menu_regulation_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_contact_container" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_menu_sign_out_container"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_menu_regulation_divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#28B389"
+                android:text="Cerrar sesión"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginStart="@dimen/medium_gap" />
+
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/bottom_sheet_menu_progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+            app:indicatorColor="#28B389"
+            app:trackColor="@android:color/transparent"
+            app:trackThickness="4dp"
+            android:visibility="gone"
+            android:elevation="@dimen/default_gap"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_sheet_menu_sign_out_container"
+            app:layout_constraintEnd_toEndOf="@id/bottom_sheet_menu_sign_out_container"
+            app:layout_constraintStart_toStartOf="@id/bottom_sheet_menu_sign_out_container"
+            app:layout_constraintTop_toTopOf="@id/bottom_sheet_menu_sign_out_container" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

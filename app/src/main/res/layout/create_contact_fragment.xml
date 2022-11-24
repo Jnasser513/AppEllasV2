@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.user.ContactViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/blogs_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/fifth_color">
+
+                <ImageButton
+                    android:id="@+id/create_blog_action_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_return"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/ic_circle_headers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/blogs_header_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Crea tu contacto"
+                    android:textColor="@color/third_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Crear contacto"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="32sp"
+                    app:layout_constraintBottom_toTopOf="@id/blogs_header_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_gap"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_contact_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edit_text_create_blog_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="start|center"
+                        android:paddingHorizontal="@dimen/minimum_gap"
+                        android:hint="Nombre"
+                        android:inputType="textCapSentences"
+                        android:maxLength="22"
+                        android:text="@{viewmodel.name}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_lastname_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edit_text_create_blog_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="start|center"
+                        android:paddingHorizontal="@dimen/minimum_gap"
+                        android:hint="Apellido"
+                        android:inputType="textCapSentences"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="@{viewmodel.lastName}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_email_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edit_text_create_blog_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="start|center"
+                        android:paddingHorizontal="@dimen/minimum_gap"
+                        android:hint="Correo"
+                        android:inputType="textCapSentences"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:text="@{viewmodel.email}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/create_blog_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint=" ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_blog_number_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@drawable/edit_text_create_blog_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="top"
+                        android:hint="Número"
+                        android:maxLength="120"
+                        android:maxLines="6"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text="@{viewmodel.number}"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/create_blog_action_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/button_style"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Crear contacto"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/create_contact_progressBar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:elevation="@dimen/default_gap"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:trackColor="@android:color/transparent"
+                        app:trackThickness="4dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

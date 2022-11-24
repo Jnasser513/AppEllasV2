@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable-v24/ic_lock.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable-v24/ic_lock1.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable-v24/ic_logo_alarm.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/blog_style.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_dialog.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_primary_color.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_transparent.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/circle_grey.xml" value="0.2065" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/contact_style.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/container_grey.xml" value="0.2065" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/create_blog_container_style.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/dialog_edit_text_style.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/edit_text_create_blog_style.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/edt_style.xml" value="0.2065" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/edt_style_2.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_admin_manage_acc.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_admin_manage_proffetionals.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_admin_map.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_advisory.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_alarm.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_baseline_face_24.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_blog.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_call.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_circle_headers.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_information.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_lock.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_lock1.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_logo.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_logo_alarm2.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_message.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_return.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_select_photo.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_splash.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_trash.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/information_fragment_container.xml" value="0.2075" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/layout_container.xml" value="0.1495" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/title_style.xml" value="0.2065" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_advisory_fragment.xml" value="0.12" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_bottom_nav_activity.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_bottom_sheet_menu_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_home_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_information.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_manage_acc_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/advisory_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/alert_detail_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/alert_widget.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/blogs_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/bottom_nav_activity.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/bottom_sheet_menu_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/change_password_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/contacts_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_account_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_advisor_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_blog_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_contact_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_alert.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_confirm_register.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_account.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_advisor.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_contact.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_description_alert.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_marker_information.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/enter_email_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/homepage_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/information_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_account.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_advisory.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_blog.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_contact.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/login_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/profile_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/splash_activity.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Android/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/verify_recover_code_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable-v24/ic_lock.xml" value="0.1155" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/blog_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/border_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/bottom_nav_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_admin_account.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_dialog.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_primary_color.xml" value="0.1155" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/button_style_transparent.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/contact_style.xml" value="0.1155" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/create_blog_container_style.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/create_blog_image_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/dialog_edit_text_style.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/edit_text_create_blog_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_admin_manage_acc.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_alarm.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_baseline_face_24.xml" value="0.1205" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_call.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_circle_headers.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_message.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_profile.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_return.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_select_photo.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/ic_trash.xml" value="0.1155" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/image_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/information_fragment_container.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/layout_container.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/drawable/return_style.xml" value="0.1335" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_advisory_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_bottom_nav_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_bottom_sheet_menu_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_home_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_information.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_manage_acc.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/admin_manage_acc_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/advisory_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/alert_widget.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/blogs_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/bottom_nav_activity.xml" value="0.18" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/bottom_sheet_menu_fragment.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/change_password.xml" value="0.2" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/change_password_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/contacts_fragment.xml" value="0.203125" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_account.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_account_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_blog_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_contact.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/create_contact_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_alert.xml" value="0.203125" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_confirm_register.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_create_blog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_account.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_advisor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_delete_contact.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_description_alert.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/dialog_marker_information.xml" value="0.203125" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/enter_email_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/homepage_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/information_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_account.xml" value="0.25" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_advisory.xml" value="0.33" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_blog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/item_contact.xml" value="0.203125" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/legal_contacts.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/login_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/profile.xml" value="0.13043478260869565" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/profile_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/splash_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DEV LATMOBILE/Desktop/Proyecto N Capas/proyecto-grupo-de-trabajo-12-eldenproyect/App/app/src/main/res/layout/verify_recover_code_fragment.xml" value="0.203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

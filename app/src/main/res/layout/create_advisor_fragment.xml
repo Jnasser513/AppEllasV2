@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.admin.AdminAdvisorViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/blogs_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/fifth_color">
+
+                <ImageButton
+                    android:id="@+id/create_blog_action_return"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/default_gap"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_return"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/ic_circle_headers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Crear asesor"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="32sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/image_style" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_select_photo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Tipo de asesor:"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/create_account_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_legal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/minimum_gap"
+                    android:buttonTint="@color/secondary_color"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Medico"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_medical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/minimum_gap"
+                    android:buttonTint="@color/secondary_color"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Legal"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_psychology"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/minimum_gap"
+                    android:buttonTint="@color/secondary_color"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Psicologo"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_style"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:hint=" ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_contact_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:ellipsize="end"
+                    android:ems="3"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/default_gap"
+                    android:text="@{viewmodel.name}"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:background="@drawable/edt_style"
+                android:layout_marginTop="@dimen/default_gap"
+                android:hint=" ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_contact_number_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/layout_container"
+                    android:fontFamily="@font/poppinsbold"
+                    android:hint="Numero"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:paddingStart="@dimen/default_gap"
+                    android:text="@{viewmodel.number}"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/third_color"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/create_contact_action_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/button_style_transparent"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Crear contacto"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/create_contact_progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/default_gap"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="4dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

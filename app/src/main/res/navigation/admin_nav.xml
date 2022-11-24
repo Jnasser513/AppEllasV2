@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav.xml"
+    app:startDestination="@id/adminHomeFragment">
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.AdminHomeFragment"
+        android:label="AdminHomeFragment"
+        tools:layout="@layout/admin_home_fragment">
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminManageAccountFragment"
+            app:destination="@id/adminManageAccountFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminInformationMapFragment"
+            app:destination="@id/adminInformationMapFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminAdvisoryFragment"
+            app:destination="@id/adminAdvisoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminManageAccountFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.AdminManageAccountFragment"
+        android:label="AdminManageAccountFragment"
+        tools:layout="@layout/admin_manage_acc_fragment">
+        <action
+            android:id="@+id/action_adminManageAccountFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminInformationMapFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.AdminInformationMapFragment"
+        android:label="AdminInformationMapFragment"
+        tools:layout="@layout/admin_information">
+        <action
+            android:id="@+id/action_adminInformationMapFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/action_adminInformationMapFragment_to_dialogMarkerInformation"
+            app:destination="@id/dialogMarkerInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAdvisoryFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.AdminAdvisoryFragment"
+        android:label="AdminAdvisoryFragment"
+        tools:layout="@layout/admin_advisory_fragment">
+        <action
+            android:id="@+id/action_adminAdvisoryFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment" />
+        <action
+            android:id="@+id/action_adminAdvisoryFragment_to_createContactFragment"
+            app:destination="@id/createAdvisoryFragment" />
+        <action
+            android:id="@+id/action_adminAdvisoryFragment_to_dialogDeleteAdvisor"
+            app:destination="@id/dialogDeleteAdvisor" />
+    </fragment>
+    <dialog
+        android:id="@+id/adminBottomSheetMenuFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.AdminBottomSheetMenuFragment"
+        android:label="AdminBottomSheetMenuFragment"
+        tools:layout="@layout/admin_bottom_sheet_menu_fragment"/>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.app.appellas.ui.views.fragments.user.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profileFragment2_to_dialogDeleteAccount2"
+            app:destination="@id/dialogDeleteAccount2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAdvisoryFragment"
+        android:name="com.app.appellas.ui.views.fragments.admin.CreateAdvisorFragment"
+        android:label="CreateContactFragment"
+        tools:layout="@layout/create_advisor_fragment">
+        <action
+            android:id="@+id/action_createContactFragment_to_adminAdvisoryFragment"
+            app:destination="@id/adminAdvisoryFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogMarkerInformation"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogMarkerInformation"
+        android:label="DialogMarkerInformation"
+        tools:layout="@layout/dialog_marker_information">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogDeleteAdvisor"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogDeleteAdvisor"
+        android:label="DialogDeleteAdvisor"
+        tools:layout="@layout/dialog_delete_advisor">
+        <action
+            android:id="@+id/action_dialogDeleteAdvisor_to_adminAdvisoryFragment"
+            app:destination="@id/adminAdvisoryFragment" />
+        <argument
+            android:name="idAdvisor"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogDeleteAccount2"
+        android:name="com.app.appellas.ui.views.fragments.dialog.DialogDeleteAccount"
+        android:label="DialogDeleteAccount"
+        tools:layout="@layout/dialog_delete_account"/>
+</navigation>

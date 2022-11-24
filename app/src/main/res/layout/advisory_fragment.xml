@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_color">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/blogs_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/fifth_color">
+
+                <View
+                    android:layout_width="459dp"
+                    android:layout_height="198dp"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/ic_circle_headers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/blogs_header_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Obten ayuda de un expero"
+                    android:textColor="@color/third_color"
+                    android:textSize="@dimen/default_gap"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-5dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Asesoría"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toTopOf="@id/blogs_header_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:text="Contactos legales"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/advisory_legal_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_advisory" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/default_gap"
+                android:text="Contactos médicos"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/advisory_medical_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_advisory" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/default_gap"
+                android:text="Contactos psicológicos"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/advisory_psycological_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/minimum_gap"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/default_gap"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_advisory" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

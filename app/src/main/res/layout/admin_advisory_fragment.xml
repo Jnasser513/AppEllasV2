@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.app.appellas.viewmodel.admin.AdminAdvisorViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_color"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/blogs_header_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/fifth_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="-20dp"
+                        android:layout_marginEnd="-20dp"
+                        android:layout_marginBottom="-40dp"
+                        android:background="@drawable/ic_circle_headers"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_gap"
+                        android:fontFamily="@font/poppinsbold"
+                        android:gravity="center"
+                        android:text="Administrar asesores"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/admin_advisory_legal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/minimum_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Asesores legales"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/blogs_header_container" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/admin_advisory_legal_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="@dimen/minimum_gap"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/admin_advisory_legal_title"
+                    tools:listitem="@layout/item_advisory" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/admin_advisor_legal_progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/default_gap"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/secondary_color"
+                    app:layout_constraintBottom_toBottomOf="@id/admin_advisory_legal_recyclerview"
+                    app:layout_constraintEnd_toEndOf="@id/admin_advisory_legal_recyclerview"
+                    app:layout_constraintStart_toStartOf="@id/admin_advisory_legal_recyclerview"
+                    app:layout_constraintTop_toTopOf="@id/admin_advisory_legal_recyclerview"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="4dp" />
+
+                <TextView
+                    android:id="@+id/admin_advisory_medical_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Asesores médicos"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/admin_advisory_legal_recyclerview" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/admin_advisory_medical_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="@dimen/minimum_gap"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/admin_advisory_medical_title"
+                    tools:listitem="@layout/item_advisory" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/admin_advisor_medical_progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/default_gap"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/secondary_color"
+                    app:layout_constraintBottom_toBottomOf="@id/admin_advisory_medical_recyclerview"
+                    app:layout_constraintEnd_toEndOf="@id/admin_advisory_medical_recyclerview"
+                    app:layout_constraintStart_toStartOf="@id/admin_advisory_medical_recyclerview"
+                    app:layout_constraintTop_toTopOf="@id/admin_advisory_medical_recyclerview"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="4dp" />
+
+                <TextView
+                    android:id="@+id/admin_advisory_psychological_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Asesores psicológicos"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/admin_advisory_medical_recyclerview" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/admin_advisory_psycological_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="@dimen/minimum_gap"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/admin_advisory_psychological_title"
+                    tools:listitem="@layout/item_advisory" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/admin_advisor_psycological_progressBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/default_gap"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/secondary_color"
+                    app:layout_constraintBottom_toBottomOf="@id/admin_advisory_psycological_recyclerview"
+                    app:layout_constraintEnd_toEndOf="@id/admin_advisory_psycological_recyclerview"
+                    app:layout_constraintStart_toStartOf="@id/admin_advisory_psycological_recyclerview"
+                    app:layout_constraintTop_toTopOf="@id/admin_advisory_psycological_recyclerview"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/admin_advisory_action_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/default_gap"
+            app:backgroundTint="@color/secondary_color"
+            android:layout_marginEnd="@dimen/default_gap"
+            android:src="@drawable/ic_add" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

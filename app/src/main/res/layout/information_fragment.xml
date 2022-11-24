@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/blogs_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/fifth_color">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:layout_marginBottom="-40dp"
+                    android:background="@drawable/ic_circle_headers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Información"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/medium_gap"
+                android:layout_marginVertical="50dp"
+                android:background="@drawable/information_fragment_container"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blogs_header_container">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/default_gap"
+                    android:layout_marginVertical="@dimen/default_gap"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="center"
+                    android:text="Usted certifica que tiene al menos 15 años. Sin embargo, no sabemos la edad de los usuarios de nuestros servicios. Si tiene menos de 15 años, no nos proporcione sus datos personales.
+
+Si descubrimos que tenemos datos personales relacionados con un usuario menor de 15 años, tomaremos las medidas adecuadas para asegurarnos de que usamos estos datos de acuerdo con las leyes y la legislación aplicables, en caso contrario, los eliminaremos de nuestros archivos. Si tiene motivos para creer que tenemos datos personales relacionados con un usuario menor de 15 años, comuníquese con nosotros.
+
+"
+                    android:textColor="@color/third_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>
