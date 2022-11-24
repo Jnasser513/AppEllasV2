@@ -1,9 +1,15 @@
 package com.app.appellas.ui.views.fragments.admin
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationManager
 import android.os.Bundle
+import android.os.Looper
+import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +17,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -21,6 +28,8 @@ import com.app.appellas.data.network.UIState
 import com.app.appellas.databinding.AdminInformationBinding
 import com.app.appellas.viewmodel.ViewModelFactory
 import com.app.appellas.viewmodel.admin.AdminLocationViewModel
+import com.google.android.gms.location.*
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -38,6 +47,12 @@ class AdminInformationMapFragment : Fragment(), OnMapReadyCallback,
     private lateinit var map: GoogleMap
     private var array: ArrayList<Marker> = arrayListOf()
     private var locationList: ArrayList<UpdateLocationBody> = arrayListOf()
+
+    val PERMISSION_ID = 42
+    lateinit var mFusedLocationClient: FusedLocationProviderClient
+
+    var lat: String = ""
+    var lon: String = ""
 
     private val userApp by lazy {
         activity?.application as AppApplication
@@ -72,9 +87,100 @@ class AdminInformationMapFragment : Fragment(), OnMapReadyCallback,
                 lifecycleOwner = viewLifecycleOwner
             }
 
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+
         createMapFragment()
 
+        getLastLocation()
+
         return binding.root
+    }
+
+    private fun isLocationEnabled(): Boolean {
+        var locationManager: LocationManager = requireContext().getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(
+            LocationManager.NETWORK_PROVIDER
+        )
+    }
+
+    private fun checkPermissions(): Boolean {
+        if (
+            ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission
+                (requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            return true
+        }
+        return false
+    }
+
+    private fun requestPermissions() {
+        ActivityCompat.requestPermissions(
+            requireActivity(),
+            arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION),
+            PERMISSION_ID
+        )
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun getLastLocation() {
+        if (checkPermissions()) {
+            if (isLocationEnabled()) {
+
+                mFusedLocationClient.lastLocation.addOnCompleteListener(requireActivity()) { task ->
+                    var location: Location? = task.result
+                    if (location == null) {
+                        requestNewLocationData()
+                    } else {
+                        //findViewById<TextView>(R.id.latTextView).text = location.latitude.toString()
+                        //findViewById<TextView>(R.id.lonTextView).text = location.longitude.toString()
+
+                        val sydney = LatLng(location.latitude, location.longitude)
+                        lat = "${location.latitude}"
+                        lon = "${location.longitude}"
+                        map.isMyLocationEnabled = true;
+                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,14.5f))
+                        map.animateCamera(CameraUpdateFactory.zoomIn());
+                        map.animateCamera(CameraUpdateFactory.zoomTo(14.5f), 2000, null);
+                    }
+                }
+            } else {
+                Toast.makeText(requireContext(), "Activa la ubiación", Toast.LENGTH_LONG).show()
+                val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+                startActivity(intent)
+            }
+        } else {
+            requestPermissions()
+        }
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun requestNewLocationData() {
+        var mLocationRequest = LocationRequest()
+        mLocationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+        mLocationRequest.interval = 0
+        mLocationRequest.fastestInterval = 0
+        mLocationRequest.numUpdates = 1
+
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+        mFusedLocationClient!!.requestLocationUpdates(
+            mLocationRequest, mLocationCallback,
+            Looper.myLooper()
+        )
+    }
+
+    private val mLocationCallback = object : LocationCallback() {
+        @SuppressLint("MissingPermission")
+        override fun onLocationResult(locationResult: LocationResult) {
+            var mLastLocation: Location? = locationResult.lastLocation
+            //findViewById<TextView>(R.id.latTextView).text = mLastLocation.latitude.toString()
+            //findViewById<TextView>(R.id.lonTextView).text = mLastLocation.longitude.toString()
+            map.setMyLocationEnabled(true);
+            map.getUiSettings().setMyLocationButtonEnabled(true);
+            val sydney = mLastLocation?.let { LatLng(it.latitude, it.longitude) }
+
+            sydney?.let { CameraUpdateFactory.newLatLngZoom(it,14.5f) }?.let { map.moveCamera(it) }
+            map.animateCamera(CameraUpdateFactory.zoomIn());
+            map.animateCamera(CameraUpdateFactory.zoomTo(14.5f), 2000, null);
+        }
     }
 
     private fun createMapFragment() {
